@@ -1,0 +1,18 @@
+body{
+    /* margin:0;
+    padding:0; */
+    /* text-align:left; */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(232, 235, 238);
+    /* background: url(../img/istockphoto.jpg); */
+    /* background-size: cover;   */
+    font-family: "Custom Yu Gothic","YuGothic","Yu Gothic",Hiragino Sans,Hiragino Kaku Gothic ProN,"Meiryo",sans-serif;
+}
+
+.title {
+    color: DarkCyan;
+}

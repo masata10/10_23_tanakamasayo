@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            background-color: rgb(232, 235, 238);
+
+            /* font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+            background: url(../img/IMG01.jpg);
+            background-size: cover;
+            font-family: "Custom Yu Gothic", "YuGothic", "Yu Gothic", Hiragino Sans, Hiragino Kaku Gothic ProN, "Meiryo", sans-serif;
+        }
+
+
+
+        #title {
+            margin-top: 100px;
+            font-family: sans-serif;
+            color: #ff7fbf;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #start {
+            border-style: none;
+            background-color: #ffb2d8;
+            padding: 10px 25px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: azure;
+            margin-top: 60px;
+            margin-left: 550px;
+            font-size: 17px;
+
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sub_title {
+
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            margin-top: 0px;
+            font-weight: bold;
+
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="display: none;" id="title">Welcome!</h1>
+    <div class="img">
+
+        <img src="../10_23_tanakamasayo/img/myway.jpg" alt="" height="150px" width="300px">
+        <p>デザインの旅。</p>
+        <p class="sub_title">Life is Art. Enjoy the Journey.</p>
+
+
+    </div>
+    <button id="start" style="display: none;">Start your Journey</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        $(function () {
+            $("#title").fadeIn(4000);
+            $("#start").fadeIn(4000);
+            $('#start').on('click', function () {
+                window.location.href = "http://localhost/10_23_tanakamasayo/map.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body{
+    /* margin:0;
+    padding:0; */
+    /* text-align:left; */
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/MAP.png);
+    /* background-size: cover; */
+    font-family: "Custom Yu Gothic","YuGothic","Yu Gothic",Hiragino Sans,Hiragino Kaku Gothic ProN,"Meiryo",sans-serif;
+}
+
+#start {
+            border-style: none;
+            background-color:#ffd6ff;
+            padding: 10px 25px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: azure;
+            /* margin-top: 60px;
+            margin-left: 570px; */
+            font-size: 10px;
+
+        }
+ :root {
+  --numOfListA: 9;
+  --imgW: 140px;
+  --mBetweenImg: 50px;
+}       
+ @media screen and (min-width: 900px) {:root {--imgW: 180px;}}
+.container {overflow: hidden;}
+.slider-container {
+  font-size: 0;
+  white-space: nowrap;
+  animation: slideshow 15s linear infinite;
+}
+.slider-img {width: var(--imgW);}
+.slider-img + .slider-img {margin-left: var(--mBetweenImg);}
+@keyframes slideshow {100% {transform: translateX(calc((var(--numOfListA) * var(--imgW) + var(--mBetweenImg) * var(--numOfListA)) * -1));}}     
+
+.main_title{
+    color: #6e5064
+
+}
+
+.sub_sub_title{
+ font-family: 'Amatic SC', cursive;
+ font-size: 20px;
+}
